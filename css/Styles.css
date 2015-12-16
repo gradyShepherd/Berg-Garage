@@ -1,0 +1,300 @@
+/*****************Site Wide*******************************/
+
+.topbar {
+	background-color: #539DC2;
+	text-align:center;
+	padding-bottom: 5px;
+	margin-top:-20px;
+	padding-top:2px;
+}
+
+body {
+	background-color:#A27B6C;
+	z-index:1;
+}
+h1 {
+	color:white;
+	text-shadow:0.1em 0.1em #000000;
+	font-size: 23pt;
+}
+
+.hidden-lg  h1 {
+	color:white;
+	text-shadow:0.1em 0.1em #000000;
+	font-size: 18pt;
+}
+
+h2 {
+	color: #C43938;
+	font-size:15pt;
+	text-shadow:0.05em 0.05em #000000;
+}
+
+.hidden-lg h2 {
+	color: #C43938;
+	font-size:12pt;
+	text-shadow:0.05em 0.05em #000000;
+}
+
+h3 {
+	text-align:center;
+}
+
+h4 {
+	text-align:center;
+}
+
+p {
+	text-indent: 18px;
+}
+
+input {
+	margin-bottom:15px;
+}
+
+#headerImg {
+	height: 120px;
+	width:auto;
+	margin-top: -8px;
+	margin-bottom: -15px;
+}
+
+#xsHeaderImg {
+	height: 90px;
+	width:auto;
+	margin-top: -8px;
+	margin-bottom: -15px;
+}
+
+ .pageLink {
+	margin-right:20px; 
+	color: black !important;
+	text-shadow:0.05em 0.05em #C43938;
+	display:inline;
+ }
+ 
+ .pageLink:hover {
+	color:  #C43938 !important;
+	text-decoration:none;
+	text-shadow:0.05em 0.05em black;
+ }
+ 
+ .tabTitle {
+	color: white !important;
+	text-shadow:0.15em 0.15em #000000;
+	display:block;
+	padding-top:10px;
+	padding-bottom:10px;
+ }
+ 
+  .pageNavbar {
+	background-color:#629632;
+	padding-top:5px;
+	padding-bottom: 5px;
+	text-align:center;
+	border-radius:5px;
+	border-width:2px;	
+    border-style:inset;
+ }
+ 
+.footer {
+	background-color: #539DC2;
+	color: black;
+	text-shadow:0.05em 0.05em #C43938;
+	vertical-align:bottom;
+	width: 100%;
+    bottom: 0;
+    position: fixed;
+	z-index:2;
+	margin-top:100px;
+}
+
+.navTabs {
+	 width:100%;
+	 border-bottom: 1px white solid;
+	 z-index:0;
+	 padding-bottom: -30px;
+	 
+ }
+ 
+ .navTabs li {
+	 background-color: #855E42;
+ }
+ 
+.navTabs .active {
+	background-color: #A27B6C;
+	border: white 1px solid;
+	border-bottom:0px !important;
+	top:1px;
+	position:relative;
+}
+
+.xsNavTabs li {
+	 background-color: #855E42;
+ }
+ 
+.xsNavTabs .tab {
+	display:inline-block;
+	border-radius:5px, 5px, 0px, 0px;
+	width:35%;
+	text-align:center;
+	border-bottom:none !important;
+	border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+ }
+ 
+.xsNavTabs .tab:hover {
+	background-color: background-color: #855E42;
+}
+
+.xsNavTabs .tab:active {
+	background-color: #855E42;
+	border: white 1px solid;
+	border-bottom:none !important;
+
+}
+
+.xsNavTabs .active {
+	background-color: #A27B6C;
+	border: white 1px solid;
+	border-bottom:none !important;
+	border-bottom:0px !important;
+	top:1px;
+	position:relative;
+}
+
+.xsNavTabs {
+	width:100%;
+	border-bottom: 1px white solid;
+	z-index:0;
+	padding-bottom: -30px;
+}
+
+.tab {
+	display:inline-block;
+	border-radius:5px, 5px, 0px, 0px;
+	width:12%;
+	text-align:center;
+	border-bottom:none !important;
+	border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+}
+
+.tab:hover {
+	background-color: background-color: #855E42;
+}
+
+.tab:active {
+	background-color: #855E42;
+	border: white 1px solid;
+}
+
+.tabTitle:hover {
+	text-decoration: none !important;
+}
+
+
+ 
+.towTab {
+	 z-index: 0 !important;
+	 padding:0px !important;
+	 display:inline-block;
+	 width:78.6%;
+	 border:none;
+	 position:absolute;
+	 width:63%;
+	 top: 63px;
+ }
+ 
+.towAnimation {
+	height: 35px;
+	z-index: 0 !important;
+ }
+ 
+.leftTab {
+	margin-left:-40px;
+}
+
+.viewSwitch {
+	text-align:center;
+	color:black !important;
+}
+/*******************************************************/
+/***********************Home Page***********************/
+ .heroImg {
+	width: 100%;
+	margin-bottom:50px;
+	border-radius:10px;
+ }
+ 
+/**********************************************************/
+/*********************About Us*****************************/
+.employeeImg {
+	width:80%;
+	height: auto;
+	border: 2px solid #89915E;
+	margin-bottom: 5px;
+}
+
+ .employeeSection {
+	border-bottom: solid grey 2px;
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-left:4px;
+	margin-right:4px;
+ }
+ 
+ .employeeInfo {
+	margin-top:20px;
+ }
+ 
+ .employeeName {
+	text-align:center;
+ }
+ 
+ .storyImg {
+	width:100%;
+	border-radius: 7px;
+	margin-top:25px;
+}
+
+.caption {
+	font-size: 11px;
+	color:#555555;
+}
+
+/*******************************************************/
+/**********************Product Page*********************/
+ 
+.loginLink {
+	color: #539DC2;
+	text-shadow:0.1em 0.1em #000000;
+	text-align:right;
+}
+ 
+.loginLink:hover {
+	text-decoration:none;
+	text-shadow: none;
+	cursor:pointer;
+}
+
+ table {
+	margin-bottom: 20px !important;
+}
+ 
+ /*adds border to bottom of table pagination in order to keep footer from covering it*/
+ div.dataTables_paginate {
+	text-align: center;
+	margin-bottom:50px;
+}
+
+/*******************************************************/
+/***********************Login Page***********************/
+ form {
+	 text-align:center;
+ }
+ 

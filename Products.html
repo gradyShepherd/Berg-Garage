@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="JavaScript/jquery-1.11.3.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.css"/>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+		<link rel="stylesheet" href="css/Styles.css"/>
+		<script type="text/javascript" charset="utf8" src="Javascript/javascript.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/buttons/1.1.0/js/buttons.print.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"></script>
+		<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.1.0/css/buttons.dataTables.min.css"></script>
+		<script>window.onload=checkSignIn();</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf8" src="Javascript/responsive-switch.min.js"></script>
+	<head/>
+	<body>
+		<div class="topbar hidden-xs">
+			<h1>Berg Garage Inc.</h1>
+			<img id="headerImg" src="Images/logoCar.png"/>
+			<h2>Conoco Quality Gasoline</h2>	
+		</div>
+		<div class="topbar hidden-lg hidden-md hidden-sm">
+			<h1>Berg Garage Inc.</h1>
+			<img id="xsHeaderImg" src="Images/logoCar.png"/>
+			<h2>Conoco Quality Gasoline</h2>	
+		</div>
+		<div class="pageNavbar">
+			<div class="pageLink"><a class="pageLink" href="Home.html">Home</a></div>
+			<div class="pageLink"><a class="pageLink" href="AboutUs.html">About Us</a></div>
+			<div class="pageLink"><a class="pageLink" href="Products.html">Products</a></div>
+		</div>
+		<div class="col-lg-2 col-md-2"></div>
+		<div class="col-lg-8 col-md-8">	
+			<h3>Products</h3>
+			<div class="loginLink" id="login">
+				<a class="loginLink" href="LogIn.html">Login</a>
+			</div>
+			<div class="loginLink" id="logout">
+				<a class="loginLink" onclick="logout()" href="">Logout</a>
+			</div>
+			<ul class="navTabs hidden-xs">
+			    <li class="tab leftTab active"><a class="tabTitle" data-toggle="tab" href="#fluids">Oils</a></li>
+			    <li class="tab"><a class="tabTitle" data-toggle="tab" href="#filters">Filters</a></li>
+				<li class="tab"><a class="tabTitle" data-toggle="tab" href="#tubes">Tubes</a></li>
+				<div class="towTab hidden-sm" style="top:82px;"><marquee><img class="towAnimation" src="Images/towTruck.png"/></marquee></div>
+				<div class="towTab hidden-lg hidden-md"><marquee><img class="towAnimation" src="Images/towTruck.png"/></marquee></div>
+			</ul>
+			<ul class="xsNavTabs hidden-lg hidden-md hidden-sm">
+			    <li class="tab leftTab active"><a class="tabTitle" data-toggle="tab" href="#fluids">Oils</a></li>
+			    <li class="tab"><a class="tabTitle" data-toggle="tab" href="#filters">Filters</a></li>
+				<li class="tab"><a class="tabTitle" data-toggle="tab" href="#tubes">Tubes</a></li>
+			</ul>
+			<div class="tab-content">
+			    <div id="fluids" class="tab-pane active">
+					<h4>Oil Prices</h4>
+					<div class="hidden-xs">
+						<table id="fluidTable" class="display" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th>Brand</th>
+									<th>Product</th>
+									<th>Our Cost</th>
+									<th>Customer Price</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="hidden-lg hidden-md hidden-sm">
+						<table id="xsFluidTable" class="display" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th>Brand</th>
+									<th>Product</th>
+									<th>Our Cost</th>
+									<th>Customer Price</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+			    </div>
+				<div id="filters" class="tab-pane">
+					<h4>Filter Prices</h4>
+					<div class="hidden-xs">
+						<table id="filterTable" class="display" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th>Brand</th>
+									<th>Product</th>
+									<th>Filter Type</th>
+									<th>Our Cost</th>
+									<th>Customer Price</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="hidden-lg hidden-md hidden-sm">
+						<table id="xsFilterTable" class="display" cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th>Brand</th>
+									<th>Product</th>
+									<th>Filter Type</th>
+									<th>Our Cost</th>
+									<th>Customer Price</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+			    </div>
+				<div id="tubes" class="tab-pane fade">
+					<h4>Inner Tube Prices</h4>
+					<table id="tubeTable" class="display" cellspacing="0" width="100%">
+						<thead>
+							<tr>
+								<th>Product</th>
+								<th>Our Cost</th>
+								<th>Customer Cost</th>
+							</tr>
+						</thead>
+					</table>
+			    </div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="footer">
+			<p class="viewSwitch">
+				<a href="#" class="rs-link viewSwitch" data-link-desktop="Switch to desktop version" data-link-responsive="Switch to responsive / mobile version"></a>
+			</p>
+			&copy;2015<br/> Written By: Grady Shepherd&reg;
+		</div>
+	</footer>
+</html>

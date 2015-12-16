@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="JavaScript/jquery-1.11.3.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.css"/>
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.js"></script>
+		<link rel="stylesheet" href="css/Styles.css"/>
+		<script type="text/javascript" charset="utf8" src="Javascript/javascript.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" charset="utf8" src="Javascript/responsive-switch.min.js"></script>
+	<head/>
+	<body>
+		<div class="topbar hidden-xs">
+			<h1>Berg Garage Inc.</h1>
+			<img id="headerImg" src="Images/logoCar.png"/>
+			<h2>Conoco Quality Gasoline</h2>	
+		</div>
+		<div class="topbar hidden-lg hidden-md hidden-sm">
+			<h1>Berg Garage Inc.</h1>
+			<img id="xsHeaderImg" src="Images/logoCar.png"/>
+			<h2>Conoco Quality Gasoline</h2>	
+		</div>
+		<div class="pageNavbar">
+			<div class="pageLink"><a class="pageLink" href="Home.html">Home</a></div>
+			<div class="pageLink"><a class="pageLink" href="AboutUs.html">About Us</a></div>
+			<div class="pageLink"><a class="pageLink" href="Products.html">Products</a></div>
+		</div>
+		<div class="col-lg-2 col-md-2"></div>
+		<div class="col-lg-8 col-md-8">	
+			<h3>About Us</h3>
+			 <ul class="navTabs hidden-xs">
+			    <li class="tab active leftTab"><a class="tabTitle" data-toggle="tab" href="#ourStory">Our Story</a></li>
+			    <li class="tab"><a class="tabTitle" data-toggle="tab" href="#theCrew">The Crew</a></li>
+				<div class="towTab hidden-sm" style="width:75%;"><marquee><img class="towAnimation" src="Images/towTruck.png"/></marquee></div>
+				<div class="towTab hidden-lg hidden-md" style="width:75%; top:44px;"><marquee><img class="towAnimation" src="Images/towTruck.png"/></marquee></div>
+			</ul>
+			<ul class="xsNavTabs hidden-lg hidden-md hidden-sm">
+			    <li class="tab active leftTab"><a class="tabTitle" data-toggle="tab" href="#ourStory">Our Story</a></li>
+			    <li class="tab"><a class="tabTitle" data-toggle="tab" href="#theCrew">The Crew</a></li>
+				<div class="towTab" style="width:35%;top:44px"><marquee><img class="towAnimation" src="Images/towTruck.png"/></marquee></div>
+			</ul>
+			<div class="tab-content">
+			    <div id="ourStory" style="margin-bottom:50px;" class="tab-pane fade in active">
+					<h4>Our Story</h4>
+					<p>Our shop is a long-time family owned and operated business, small town business. Having started our business
+					 in Martinsdale, Montana, we moved to White Sulphur Springs in the 1970's with the hope of growing our business. 
+					 Since doing this, we have been able to expand our services to a much broader range. We are a proud vendor of Cooper
+					  Tires, supplier of fine, Conoco quality gasolines, and one of the main propane suppliers in our area. In addition,
+					  we also make bulk fuel deliveries to the ranches around the area. Our main function is still servicing our customers cars, 
+					  and making them safer. Our mechanic works on all parts and components on all makes and models of vehicles. We deal with the 
+					  local parts store as much as we can, keeping our business local. We were a proud dealer of GM products until recently. In 
+					  our many years dealing with GM, our business won several awards for our loyalty and effectiveness. 
+					  Our number one priority is and always has been our customers' satisfaction.</p>
+					  <div class="col-lg-6 col-md-6"><img class="storyImg" src="Images/57.jpg"/></div><div class="col-lg-6 col-md-6"><img class="storyImg" src="Images/41.jpg"/></div>
+					  <p class="caption">Pictured above are a 1957 Chevy Bel-Air (L) and a 1941 Special Deluxe Coupe (R). Both were originally sold at the shop and 
+					  bought back at a later date.</p>
+			    </div>
+			    <div id="theCrew" class="tab-pane fade">
+					<h4>Meet the Crew</h4>
+					<div>
+					<div class="row employeeSection">
+						<div class="col-lg-2 col-md-2 col-sm-3 employeeName">
+							Jack Berg</br><img class="employeeImg" src="Images/noImage.jpg"/>
+						</div>
+						<div>
+							<p class="employeeInfo">As Co-Manager of the business, Jack has a handful of responsibilites. He is the main go-to for any issues around the 
+							shop. Although endlessly busy, he is always wanting to keep all the customers satisfied. He fills in on any job needing and
+							 extra hand. In is off time, he is a long-time volunteer for the Meagher County Ambulance, and has even taught EMT classes on several
+							 occasions. Until recently, he was also a volunteer on the volunteer fire crews. Jack's main concern is his community.</p>
+						</div>
+					</div>
+					<div class="row employeeSection">
+						<div class="col-lg-2 col-md-2 col-sm-3 employeeName padding-left:3px;">
+							Jay Berg </br><img class="employeeImg" src="Images/noImage.jpg"/>
+						</div>
+						<div>
+							<p class="row employeeInfo">As the second Co-manager of the business, Jay's main role is the fuel supply. He runs fuel all over the county to various
+							ranches as they order it. He is also in charge of keeping the tanks at the station full. Jay also sets the current fuel prices,
+							so it is his job to stay up-to-date on any and all changes to current costs.</p>
+						</div>
+					</div>
+					<div class="row employeeSection">
+						<div class="col-lg-2 col-md-2 col-sm-3 employeeName">
+							Ken Bosner</br><img class="employeeImg" src="Images/noImage.jpg"/>
+						</div>
+						<div>
+							<p class="employeeInfo">Ken has worked for the shop for two years now. After coming to White Sulphur to retire, he made it about two weeks 
+							befor he got bored with the retired life and took up a position here. He is hard working and always willing to take on 
+							another customer.</p>
+						</div>
+					</div>
+					<div class="row employeeSection">
+						<div class="col-lg-2 col-md-2 col-sm-3 employeeName">
+							Joel Taylor</br><img class="employeeImg" src="Images/noImage.jpg"/>
+						</div>
+						<div>
+							<p class="employeeInfo">Joel was born and raised in White Sulphur. After graduating, he worked on various ranches for a few years before taking up a position here.
+							Joel has a wide knowledge of mechanics and has quickly expanded that knowledge in his time here. He is a hard worker and great at interacting with our customers.</p>
+						</div>
+					</div>
+					<div class="row employeeSection" style="margin-bottom:40px">
+						<div class="col-lg-2 col-md-2 col-sm-3 employeeName">
+							Kirk Shepherd</br><img class="employeeImg" src="Images/noImage.jpg"/>
+						</div>
+						<div>
+							<p class="employeeInfo">Although he is not as often seen by the customers, due to his shop being in the back of the building, Kirk is one of the biggest parts of this 
+							business. He takes on all of the larger mechanic jobs, so that the front shop can stay focused on service jobs and minor mechanical procedures. His 
+							position requires a diverse set of mechanical abilities, which he has mastered in his many years of repairing vehicles and equipment.</p>
+						</div>
+					</div>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</body>
+	<footer>
+		<div class="footer">
+			<p class="viewSwitch">
+				<a href="#" class="rs-link viewSwitch" data-link-desktop="Switch to desktop version" data-link-responsive="Switch to responsive / mobile version"></a>
+			</p>
+			&copy;2015<br/> Written By: Grady Shepherd&reg;
+		</div>
+	</footer>
+</html>
